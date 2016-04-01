@@ -1,0 +1,255 @@
+
+------------State----------------------
+Current available resource: 
+10, 5, 7, 
+
+Allocation: 
+0, 1, 0, 
+2, 0, 0, 
+3, 0, 2, 
+2, 1, 1, 
+0, 0, 2, 
+
+Need: 
+7, 4, 3, 
+1, 2, 2, 
+6, 0, 0, 
+0, 1, 1, 
+4, 3, 1, 
+
+---------------State--------------------
+
+Customer 0 requests resource 3,4,2,and granted
+Customer 1 requests resource 3,2,2,but rejected
+Customer 3 requests resource 2,1,2,but rejected
+Customer 2 requests resource 3,1,1,but rejected
+Customer 4 requests resource 3,2,3,but rejected
+Customer 0 releases resource 3,3,1,and granted
+
+------------State----------------------
+Current available resource: 
+10, 4, 6, 
+
+Allocation: 
+0, 2, 1, 
+2, 0, 0, 
+3, 0, 2, 
+2, 1, 1, 
+0, 0, 2, 
+
+Need: 
+7, 3, 2, 
+1, 2, 2, 
+6, 0, 0, 
+0, 1, 1, 
+4, 3, 1, 
+
+---------------State--------------------
+
+Customer 2 releases resource 1,1,1,but rejected
+Customer 4 releases resource 1,1,1,but rejected
+Customer 4 requests resource 4,1,1,and granted
+Customer 3 releases resource 1,1,1,and granted
+
+------------State----------------------
+Current available resource: 
+7, 4, 6, 
+
+Allocation: 
+0, 2, 1, 
+2, 0, 0, 
+3, 0, 2, 
+1, 0, 0, 
+4, 1, 3, 
+
+Need: 
+7, 3, 2, 
+1, 2, 2, 
+6, 0, 0, 
+1, 2, 2, 
+0, 2, 0, 
+
+---------------State--------------------
+
+Customer 1 releases resource 1,1,1,but rejected
+Customer 3 requests resource 1,2,2,and granted
+Customer 2 requests resource 2,1,1,but rejected
+Customer 0 requests resource 7,5,3,but rejected
+Customer 1 requests resource 1,1,1,and granted
+Customer 2 releases resource 1,1,2,but rejected
+Customer 1 releases resource 3,1,1,and granted
+
+------------State----------------------
+Current available resource: 
+8, 2, 4, 
+
+Allocation: 
+0, 2, 1, 
+0, 0, 0, 
+3, 0, 2, 
+2, 2, 2, 
+4, 1, 3, 
+
+Need: 
+7, 3, 2, 
+3, 2, 2, 
+6, 0, 0, 
+0, 0, 0, 
+0, 2, 0, 
+
+---------------State--------------------
+
+Customer 4 releases resource 3,1,1,and granted
+
+------------State----------------------
+Current available resource: 
+11, 3, 5, 
+
+Allocation: 
+0, 2, 1, 
+0, 0, 0, 
+3, 0, 2, 
+2, 2, 2, 
+1, 0, 2, 
+
+Need: 
+7, 3, 2, 
+3, 2, 2, 
+6, 0, 0, 
+0, 0, 0, 
+3, 3, 1, 
+
+---------------State--------------------
+
+Customer 0 releases resource 1,1,1,but rejected
+Customer 0 requests resource 4,2,3,but rejected
+Customer 2 requests resource 3,1,1,but rejected
+Customer 3 releases resource 2,1,2,and granted
+
+------------State----------------------
+Current available resource: 
+13, 4, 7, 
+
+Allocation: 
+0, 2, 1, 
+0, 0, 0, 
+3, 0, 2, 
+0, 1, 0, 
+1, 0, 2, 
+
+Need: 
+7, 3, 2, 
+3, 2, 2, 
+6, 0, 0, 
+2, 1, 2, 
+3, 3, 1, 
+
+---------------State--------------------
+
+Customer 3 requests resource 2,1,1,and granted
+Customer 4 requests resource 3,3,2,but rejected
+Customer 1 requests resource 1,1,2,and granted
+Customer 3 releases resource 1,1,1,and granted
+
+------------State----------------------
+Current available resource: 
+11, 3, 5, 
+
+Allocation: 
+0, 2, 1, 
+1, 1, 2, 
+3, 0, 2, 
+1, 1, 0, 
+1, 0, 2, 
+
+Need: 
+7, 3, 2, 
+2, 1, 0, 
+6, 0, 0, 
+1, 1, 2, 
+3, 3, 1, 
+
+---------------State--------------------
+
+Customer 1 releases resource 1,1,1,and granted
+
+------------State----------------------
+Current available resource: 
+12, 4, 6, 
+
+Allocation: 
+0, 2, 1, 
+0, 0, 1, 
+3, 0, 2, 
+1, 1, 0, 
+1, 0, 2, 
+
+Need: 
+7, 3, 2, 
+3, 2, 1, 
+6, 0, 0, 
+1, 1, 2, 
+3, 3, 1, 
+
+---------------State--------------------
+
+Customer 0 releases resource 1,2,1,but rejected
+Customer 4 releases resource 1,1,1,but rejected
+Customer 2 releases resource 1,1,2,but rejected
+Customer 4 requests resource 3,3,1,and granted
+Customer 0 requests resource 7,4,1,but rejected
+Customer 1 requests resource 1,1,1,and granted
+Customer 3 requests resource 1,1,2,but rejected
+Customer 2 requests resource 3,1,1,but rejected
+Customer 0 releases resource 1,1,1,but rejected
+Customer 4 releases resource 4,2,1,and granted
+
+------------State----------------------
+Current available resource: 
+12, 2, 5, 
+
+Allocation: 
+0, 2, 1, 
+1, 1, 2, 
+3, 0, 2, 
+1, 1, 0, 
+0, 1, 2, 
+
+Need: 
+7, 3, 2, 
+2, 1, 0, 
+6, 0, 0, 
+1, 1, 2, 
+4, 2, 1, 
+
+---------------State--------------------
+
+Customer 4 requests resource 3,1,1,and granted
+Customer 1 releases resource 1,1,1,and granted
+
+------------State----------------------
+Current available resource: 
+10, 2, 5, 
+
+Allocation: 
+0, 2, 1, 
+0, 0, 1, 
+3, 0, 2, 
+1, 1, 0, 
+3, 2, 3, 
+
+Need: 
+7, 3, 2, 
+3, 2, 1, 
+6, 0, 0, 
+1, 1, 2, 
+1, 1, 0, 
+
+---------------State--------------------
+
+Customer 2 releases resource 3,1,1,but rejected
+Customer 3 releases resource 1,1,1,but rejected
+Customer 3 requests resource 1,2,2,but rejected
+Customer 0 requests resource 4,1,1,and granted
+Customer 2 requests resource 8,1,1,but rejected
+Customer 1 requests resource 1,2,2,but rejected
