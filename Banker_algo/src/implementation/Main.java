@@ -5,15 +5,15 @@ import java.io.*;
 
 
 public class Main {
-	static int resource_num = 0;
-	static int process_num = 0;
-	static int[] available;
-	static int[][] max;
-	static int[][] allocation;
-	static int[][] need;
-	static int[] finish;
+	 private int resource_num;
+	 private int process_num ;
+	 private int [] available;
+	 private int[][] allocation;
+	 private int[][] need;
+	 private int[] finish;
+	 private int[][] max;
 	
-	public static void initialize(){
+	public void initialize(){
 		try {
 			Scanner scanner = new Scanner(new File("data/example1.txt"));
 			resource_num = scanner.nextInt();
@@ -57,7 +57,7 @@ public class Main {
 		}
 	}
 	
-	public static int find_candidate(int[][] x,int[] y){
+	public int find_candidate(int[][] x,int[] y){
 		boolean status;
 		for (int i = 0; i < process_num; i++) {
 			status = true;
@@ -76,7 +76,7 @@ public class Main {
 		return -1;
 	}
 	
-	public static void update(int index,int[] work){
+	public void update(int index,int[] work){
 		//update work
 		for(int j=0; j<resource_num; j++){
 			work[j] +=allocation[index][j];
@@ -84,7 +84,7 @@ public class Main {
 		//update index
 		finish[index] = 1;
 	}
-	public static boolean check_status(){
+	public boolean check_status(){
 		for (int i = 0; i < finish.length; i++) {
 			if (finish[i] == 0) {
 				return false;
@@ -92,9 +92,9 @@ public class Main {
 		}
 		return true;
 	}
-	public static void process(){
-		int[] work = available;
-		
+	public void process(){
+		int[] work = new int[resource_num];
+		System.arraycopy(available, 0, work, 0, resource_num);
 		int candidate = find_candidate(need,work);
 		
 		while(candidate != -1){
@@ -105,14 +105,15 @@ public class Main {
 			System.out.println("Safe State");
 		}
 		else {
-			System.out.println("Not Safe");
+			System.out.println("Unsafe State");
 		}
 	}
 	
 	
 	
 	public static void main(String[]args) {
-		initialize();
-		process();
+		Main main = new Main();
+		main.initialize();
+		main.process();
 	}
 }
