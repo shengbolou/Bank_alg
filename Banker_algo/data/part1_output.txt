@@ -1,4 +1,7 @@
-example1: Safe State
+example1: Safe State 
+Safe sequence: 1 2 3 
 example2: Safe State
+Safe sequence: 1 2 3 4 5
 example3: Safe State
+Safe sequence: 1 2 3
 example4: Unsafe State
